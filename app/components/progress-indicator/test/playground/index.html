@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Progress Indicator Playground</title>
+    <link href="/dist/progress-indicator.css" rel="stylesheet">
+  </head>
+  <body data-ng-app="bwPlayground">
+    <div class="container center">
+      <h1>Progress Indicator Playground</h1>
+      <div class="widgets-container">
+        <div class="widget-container">
+          <bw-progress-indicator data-progress-text="Progress"
+            data-actual="{{actual}}" data-expected="{{expected}}">
+          </bw-progress-indicator>
+        </div>
+      </div>
+      <div class="data-inputs">
+        <label>
+          Actual
+          <input type="text" name="actual" ng-model="actual">
+        </label>
+        <label>
+          Expected
+          <input type="text" name="expected" ng-model="expected">
+        </label>
+      </div>
+    </div>
+
+    <!--
+    load JS scripts here
+    -->
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/d3.js"></script>
+    <script src="/dist/progress-indicator.js"></script>
+  </body>
+</html>

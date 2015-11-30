@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Progress Indicator Demo</title>
+    <link href="/dist/progress-indicator.css" rel="stylesheet">
+  </head>
+  <body data-ng-app="bwApp">
+    <div class="container center">
+      <h1>Progress Indicator</h1>
+      <div class="widgets-container">
+        <div class="widget-container">
+          <bw-progress-indicator data-progress-text="Progress"
+            data-actual="0.23" data-expected="0.7">
+          </bw-progress-indicator>
+        </div>
+        <div class="widget-container">
+          <bw-progress-indicator data-progress-text="Progress"
+            data-actual="0.55" data-expected="0.8">
+          </bw-progress-indicator>
+        </div>
+        <div class="widget-container">
+          <bw-progress-indicator data-progress-text="Progress"
+            data-actual="0.73" data-expected="0.9">
+          </bw-progress-indicator>
+        </div>
+        <div class="widget-container">
+          <bw-progress-indicator data-progress-text="Progress"
+            data-actual="1.0" data-expected="1.0">
+          </bw-progress-indicator>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    load JS scripts here
+    -->
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/d3.js"></script>
+    <script src="/dist/progress-indicator.js"></script>
+  </body>
+</html>

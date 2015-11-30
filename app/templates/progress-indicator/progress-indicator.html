@@ -1,0 +1,20 @@
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <circle class="progress-circle" cx="50%" cy="50%" r="35%"></circle>
+
+    <text dx="50%" dy="48%" text-anchor="middle">
+      <tspan class="percent-text">{{percentText}}</tspan>
+      <tspan class="percent">%</tspan>
+    </text>
+    <text dx="50%" dy="60%" class="progress-text"
+      text-anchor="middle">{{progressText}}</text>
+
+    <path bw-progress-arc class="progress-path expected"
+      data-value="{{expected}}" data-radius-offset="6"
+      data-type="expected"></path>
+
+    <path bw-progress-arc class="progress-path actual"
+      data-value="{{actual}}" data-radius-offset="15"
+      data-type="actual"></path>
+  </g>
+</svg>
