@@ -30,7 +30,7 @@ $ grunt test
 Once the tests are run, navigate to `/coverage` directory to view code coverage results
 
 ## Playground
-Playground lets you run components independent of the the application's logic. It sets up components with their names as routes that server `index.html` under the components' playground directory. (eg: http://localhost:5566/progress-indicator)
+Playground lets you run components independent of the the application's logic. It sets up components with their names as routes that serve `index.html` under the components' playground directory. (eg: http://localhost:5566/progress-indicator)
 
 ```sh
 $ cd app/playground
